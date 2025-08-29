@@ -48,39 +48,41 @@
         </div>
     </nav>
 
+  <h1 align="center">Connexion</h1>
 
-    <h1 align="center">Actualités</h1>
-
-    <p>Ici vous retrouverez toutes les dernières actualités liées aux membres de VAL'APPLE et la vie dans notre société !</p>
-
-    <h2>Nouvelle arrivante</h2>
-
-    <div class="container-fluid">
+    <div class="m-4">
         <div class="row">
-            <div class="col-md-4">
-                <div><img src="images/poppy.jpg" class="img-thumbnail" width="400" height="391" alt="Image de Poppy"></div>
-            </div>
-            <div class="col-md-8 ">
-                <div><p class="text-justify">Nous avons le plaisir d’annoncer l’arrivée d’une nouvelle collaboratrice au sein de l’équipe : Poppy. Dotée d’une solide expérience et d’une grande curiosité intellectuelle, elle apporte un regard neuf et une énergie précieuse à notre structure. Son parcours l’a conduite à explorer différents domaines, toujours avec le souci de l’innovation et du respect des valeurs humaines et environnementales. <br />
-                        Poppy se distingue par son sens de l’organisation et sa capacité à travailler en équipe, deux qualités qui seront déterminantes pour accompagner la croissance de nos projets. Passionnée par les enjeux liés à la durabilité et à la recherche de solutions responsables, elle trouve pleinement sa place dans notre vision et nos ambitions.<br />
-                        Nous sommes convaincus que son dynamisme, sa créativité et son professionnalisme contribueront à renforcer la cohésion de l’équipe et à enrichir nos initiatives. Toute l’équipe lui souhaite la bienvenue et se réjouit de cette nouvelle collaboration, placée sous le signe de l’innovation, de l’engagement et de la réussite partagée.</div></p>
+            <div class="col-12">
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="identification" id="radioClients" checked>
+                    <label class="form-check-label" for="radioClients">Clients</label>
+                </div>
+                <div class="form-check form-check-inline ms-3">
+                    <input type="radio" class="form-check-input" name="identification" id="radioPersonnels">
+                    <label class="form-check-label" for="radioPersonnels">Personnels</label>
+                </div>
             </div>
         </div>
-    </div>
-
-    <h2>Assemblée Générale 2025 au ski</h2>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-8">
-                <p class="text-justify">Nous avons eu le plaisir d’organiser notre assemblée générale annuelle dans un cadre exceptionnel : la montagne. Cet événement a été l’occasion de dresser le bilan de l’année écoulée, de présenter nos orientations stratégiques pour l’avenir et de renforcer les échanges entre les équipes. Allier travail et moments de partage dans un tel environnement nous a permis de consolider notre cohésion et de réaffirmer notre engagement collectif pour l’année à venir. La prochaine AG aura lieu dans la capitale du vin : Bordeaux !</p>
+        <form action="/examples/actions/confirmation.php" method="post">
+            <div class="mb-3">
+                <label class="form-label" for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
             </div>
-            <div class="col-md-4 d-flex justify-content-center align-items-center">
-                <img src="images/ski.jpg" class="img-thumbnail" width="400" height="391" alt="Image des 7LO">
+            <div class="mb-3">
+                <label class="form-label" for="inputPassword">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
             </div>
-        </div>
+            <div class="mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkRemember">
+                    <label class="form-check-label" for="checkRemember">Remember me</label>
+                </div>
+            </div>
+            <button type="button" class="btn btn-outline-success" disabled>
+                <span class="spinner-border spinner-border-sm"></span> Loading...
+            </button>
+        </form>
     </div>
-
 
     <hr>
 

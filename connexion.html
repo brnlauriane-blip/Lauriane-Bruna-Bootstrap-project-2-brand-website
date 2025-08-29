@@ -12,36 +12,35 @@
 
 <body>
 
-    <div class="my-container">
+<div class="my-container">
 
   <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-success">
         <div class="container-fluid">
             <a href="Home.html" class="navbar-brand">
-                <img src="images/logo-valapple.png" alt="Logo Val'Apple" height="40" class="d-inline-block align-text-top">
-            </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav">
-                    <a href="Home.html" class="nav-item nav-link active">
-                        <i class="bi-house-door"></i>Home</a>
-                     <div class="nav-item dropdown">
-                      <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">A propos</a>
-                      <div class="dropdown-menu">
-                          <a href="NotreHistoire.html" class="dropdown-item">Notre Histoire</a>
-                          <a href="NotreScience.html" class="dropdown-item">Notre Science</a>
-                      </div>
-                     </div>
-                    <a href="Store.html" class="nav-item nav-link">
-                        <i class="bi-shop"></i>Boutique</a>
-                    <a href="event.html" class="nav-item nav-link">
-                        <i class="bi-calendar-event"></i>Evènements</a>
-                    <a href="actu.html" class="nav-item nav-link">
-                        <i class="bi-newspaper"></i>Actualités</a>
-                    <a href="Contact.html" class="nav-item nav-link">
-                        <i class="bi-info-circle"></i>Contact</a>
-                </div>
+                <img src="images/logo-valapple.png" alt="Logo Val'Apple" height="40" class="d-inline-block align-text-top"></a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav">
+                            <a href="Home.html" class="nav-item nav-link active">
+                            <i class="bi-house-door"></i>Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">A propos</a>
+                            <div class="dropdown-menu">
+                                <a href="NotreHistoire.html" class="dropdown-item">Notre Histoire</a>
+                                <a href="NotreScience.html" class="dropdown-item">Notre Science</a>
+                            </div>
+                        </div>
+                            <a href="Store.html" class="nav-item nav-link">
+                                <i class="bi-shop"></i>Boutique</a>
+                            <a href="event.html" class="nav-item nav-link">
+                                <i class="bi-calendar-event"></i>Evènements</a>
+                            <a href="actu.html" class="nav-item nav-link">
+                                <i class="bi-newspaper"></i>Actualités</a>
+                            <a href="Contact.html" class="nav-item nav-link">
+                                <i class="bi-info-circle"></i>Contact</a>
+                    </div>
                 <div class="navbar-nav ms-auto">
                     <a href="connexion.html" class="nav-item nav-link">Connexion</a>
                 </div>
@@ -49,48 +48,46 @@
         </div>
     </nav>
 
-
-
   <h1 align="center">Connexion</h1>
 
-  <div class="m-4">
-    <div class="row">
-        <div class="col-12">
-            <div class="form-check form-check-inline">
-                <input type="radio" class="form-check-input" name="identification" id="radioClients" checked>
-                <label class="form-check-label" for="radioClients">Clients</label>
-            </div>
-            <div class="form-check form-check-inline ms-3">
-                <input type="radio" class="form-check-input" name="identification" id="radioPersonnels">
-                <label class="form-check-label" for="radioPersonnels">Personnels</label>
+    <div class="m-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="identification" id="radioClients" checked>
+                    <label class="form-check-label" for="radioClients">Clients</label>
+                </div>
+                <div class="form-check form-check-inline ms-3">
+                    <input type="radio" class="form-check-input" name="identification" id="radioPersonnels">
+                    <label class="form-check-label" for="radioPersonnels">Personnels</label>
+                </div>
             </div>
         </div>
+        <form action="connexion2.html" method="post">
+            <div class="mb-3">
+                <label class="form-label" for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="inputPassword">Password</label>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+            </div>
+            <div class="mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="checkRemember">
+                    <label class="form-check-label" for="checkRemember">Remember me</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-success">Sign in</button>
+        </form>
     </div>
-    <form action="/examples/actions/confirmation.php" method="post">
-        <div class="mb-3">
-            <label class="form-label" for="inputEmail">Email</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
-        </div>
-        <div class="mb-3">
-            <label class="form-label" for="inputPassword">Password</label>
-            <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
-        </div>
-        <div class="mb-3">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="checkRemember">
-                <label class="form-check-label" for="checkRemember">Remember me</label>
-            </div>
-        </div>
-        <button type="submit" class="btn btn-success">Sign in</button>
-    </form>
-</div>
 
-<hr>
+    <hr>
 
-<footer align="center"> Copyright 2025 <br />
-Contact : <a href="mailto:contact@valapple.com?Subject:Demande d'information">contact@valappple.com</a><br />
-<img alt="Logo Val'Apple" align="center" src="images\logo-valapple.png" width="200" height="159" />
-</footer>
+    <footer align="center"> Copyright 2025 <br />
+        Contact : <a href="mailto:contact@valapple.com?Subject:Demande d'information">contact@valappple.com</a><br />
+        <img alt="Logo Val'Apple" align="center" src="images\logo-valapple.png" width="200" height="159" />
+    </footer>
 
 </div>
 
